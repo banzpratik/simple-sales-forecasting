@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import Prophet from prophet
+from neuralprophet import NeuralProphet as Prophet
+
 
 @st.cache_data
 def load_data():
