@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 import numpy as np
 
 # 1. Load your CSV, parsing nothing yet
-df = pd.read_csv("data/sales.csv")
+df = pd.read_csv("sales.csv")
 
 # 2. Rename for Prophet
 df = df.rename(columns={
