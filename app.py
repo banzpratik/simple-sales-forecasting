@@ -4,7 +4,7 @@ from prophet import Prophet
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/sales.csv")
+    df = pd.read_csv("sales.csv")
     df = df.rename(columns={"Date":"ds","Weekly_Sales":"y"})
     df["ds"] = (
         df["ds"]
@@ -20,7 +20,7 @@ def train_model(df):
     m.fit(df[["ds","y"]])
     return m
 
-st.title("⚡ Weekly Sales Forecasting")
+st.title("Weekly Sales Forecasting")
 
 df    = load_data()
 model = train_model(df)
