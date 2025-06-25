@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-from neuralprophet import NeuralProphet as Prophet
+from fbprophet import Prophet
+
 
 
 @st.cache_data
