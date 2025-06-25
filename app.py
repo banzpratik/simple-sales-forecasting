@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from prophet import Prophet
+import Prophet from prophet
 
 @st.cache_data
 def load_data():
